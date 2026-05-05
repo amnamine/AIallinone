@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Hub — Your curated gateway to the world's best AI chatbots. Discover, compare, and launch ChatGPT, Gemini, Claude, DeepSeek, and more from one beautiful interface.">
+  <meta name="keywords" content="AI chatbots, ChatGPT, Gemini, Claude, DeepSeek, Copilot, Perplexity, artificial intelligence, AI directory">
+  <meta name="author" content="AI Hub">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>AI Hub — Discover the Best AI Chatbots</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Animation -->
+  <div class="bg-animation">
+    <canvas id="particles-canvas" style="width:100%;height:100%;"></canvas>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+  </div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">🤖</div>
+      <span class="nav-logo-text">AI Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#cards">Explore</a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <div class="nav-search">
+      <span class="nav-search-icon">🔍</span>
+      <input type="text" id="search-input" placeholder='Search AI bots...  press "/"' autocomplete="off">
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      <span>Live Directory — Updated 2025</span>
+    </div>
+    <h1>
+      Your Gateway to<br>
+      <span class="gradient-text">Modern AI Chatbots</span>
+    </h1>
+    <p>
+      Explore, compare, and launch the world's most powerful AI assistants — all from one beautifully crafted hub. Find the perfect AI for your workflow.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="number" id="bot-count">15</div>
+        <div class="label">AI Chatbots</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">10</div>
+        <div class="label">Countries</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">8</div>
+        <div class="label">Categories</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar" id="filters">
+    <button class="filter-btn active" data-filter="all">All Bots</button>
+    <button class="filter-btn" data-filter="general">General</button>
+    <button class="filter-btn" data-filter="reasoning">Reasoning</button>
+    <button class="filter-btn" data-filter="research">Research</button>
+    <button class="filter-btn" data-filter="productivity">Productivity</button>
+    <button class="filter-btn" data-filter="social">Social</button>
+    <button class="filter-btn" data-filter="aggregator">Aggregator</button>
+  </div>
+
+  <!-- Cards Grid -->
+  <section class="cards-section" id="cards">
+    <div class="cards-grid" id="cards-grid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Crafted with <span class="heart">❤️</span> — AI Hub © 2025 — Open source & free to use</p>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
